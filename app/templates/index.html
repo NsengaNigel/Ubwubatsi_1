@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UbwubatsiHub - Home</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .hero {
+            position: relative;
+            height: 500px;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/static/images/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        .hero-content {
+            max-width: 800px;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .feature-card {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        .feature-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .welcome-section {
+            text-align: center;
+            padding: 40px 20px;
+            background: #f9f9f9;
+            margin-bottom: 40px;
+        }
+        .welcome-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .welcome-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>UbwubatsiHub</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/libraries">Libraries</a></li>
+                <li><a href="/faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to UbwubatsiHub</h1>
+                <p>Your platform for sharing and accessing building practices and resources</p>
+                <a href="/libraries" class="cta-button">Explore Resources</a>
+            </div>
+        </section>
+
+        <section class="welcome-section">
+            <div class="welcome-content">
+                <h2>Welcome to Our Community</h2>
+                <p>UbwubatsiHub is dedicated to fostering collaboration and knowledge sharing among architects and civil engineers. Our platform provides a space for professionals to connect, share resources, and learn from each other.</p>
+                <img src="/static/images/welcome.jpg" alt="Welcome to UbwubatsiHub" class="welcome-image">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <img src="/static/images/library.jpg" alt="Resource Library" class="feature-image">
+                <h3>Resource Library</h3>
+                <p>Access a comprehensive collection of building practices, guidelines, and technical documents shared by professionals in the field.</p>
+            </div>
+            <div class="feature-card">
+                <img src="/static/images/collaboration.jpg" alt="Collaboration" class="feature-image">
+                <h3>Collaboration</h3>
+                <p>Connect with other professionals, share experiences, and learn from the community's collective knowledge.</p>
+            </div>
+            <div class="feature-card">
+                <img src="/static/images/learning.jpg" alt="Continuous Learning" class="feature-image">
+                <h3>Continuous Learning</h3>
+                <p>Stay updated with the latest practices and trends in architecture and civil engineering through our shared resources.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 UbwubatsiHub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
